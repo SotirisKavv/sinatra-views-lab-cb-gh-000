@@ -7,19 +7,19 @@
     <h1>Today</h1>
     <% today = Time.now %>
     <% case today.wday
-      when 0
-        day = "Monday"
       when 1
-        day = "Tuesday"
+        day = "Monday"
       when 2
-        day = "Wednesday"
+        day = "Tuesday"
       when 3
-        day = "Thursday"
+        day = "Wednesday"
       when 4
-        day = "Friday"
+        day = "Thursday"
       when 5
-        day = "Saturday"
+        day = "Friday"
       when 6
+        day = "Saturday"
+      when 0
         day = "Sunday"
       end%>
     <p><%= "The date is "+ day + ", " + today.month.to_s + " " + today.mday.to_s + ", " + today.year.to_s%>
