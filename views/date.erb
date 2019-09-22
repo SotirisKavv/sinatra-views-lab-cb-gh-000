@@ -22,6 +22,6 @@
       when 0
         day = "Sunday"
       end%> -->
-    <p><%= "The date is "+ today.wday.strftime("%B") + ", " + today.strftime("%B") + " " + today.mday.to_s + ", " + today.year.to_s%>
+    <p><%= "The date is "+ today.strftime("%A") + ", " + today.strftime("%B") + " " + today.mday.to_s + ", " + today.year.to_s%>
   </body>
 </html>
