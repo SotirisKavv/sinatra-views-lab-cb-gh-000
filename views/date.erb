@@ -1,0 +1,26 @@
+<!doctype html5>
+<html>
+  <head>
+    <title>Date</title>
+  </head>
+  <body>
+    <h1>Today</h1>
+    <% today = Time.now %>
+    <% case today.wday
+      when 0
+        day = "Monday"
+      when 1
+        day = "Tuesday"
+      when 2
+        day = "Wednesday"
+      when 3
+        day = "Thursday"
+      when 4
+        day = "Friday"
+      when 5
+        day = "Saturday"
+      when 6
+        day = "Sunday"%>
+    <p><%= "The date is "+ day + ", " + today.month + " " + today.mday + ", " + today.year%>
+  </body>
+</html>
